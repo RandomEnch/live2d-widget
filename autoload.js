@@ -1,6 +1,6 @@
 // 注意：live2d_path 参数应使用绝对路径
 //const live2d_path = "https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/";
-const live2d_path = "./live2d-widget/";
+const live2d_path = "https://cdn.jsdelivr.net/gh/RandomEnch/live2d-widget@latest/";
 
 // 封装异步加载资源的方法
 function loadExternalResource(url, type) {
@@ -33,8 +33,8 @@ if (screen.width >= 768) {
 	]).then(() => {
 		initWidget({
 			waifuPath: live2d_path + "waifu-tips.json",
-			apiPath: "你的自建api地址(可本地，可链接)",
-			//cdnPath: "https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/"
+			//apiPath: "你的自建api地址(可本地，可链接)",
+			cdnPath: "https://npm.elemecdn.com/akilar-live2dapi@latest/"
 		});
 	});
 }
